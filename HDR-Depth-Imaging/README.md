@@ -1,4 +1,4 @@
-# HDR imaging for improving the disparity maps from stereo cameras
+# HDR imaging for improving disparity maps
 
 Comparison of the image and the corresponding disparity map without HDR:
 ![no_hdr](https://github.com/domi20u/Projects/blob/master/HDR-Depth-Imaging/hdr_off.png)
