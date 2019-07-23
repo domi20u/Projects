@@ -1,0 +1,360 @@
+#: import FadeTransition kivy.uix.screenmanager.FadeTransition
+
+ScreenManagement:
+	transition: FadeTransition()
+	
+	ContentScreen:
+	PMScreen:
+	AnomalyScreen:
+	DigitGenScreen:
+	AnotherScreen:
+	MainScreen:
+	ResultScreen:
+	
+	
+		
+
+<ContentScreen>:
+	name: "content"
+	BoxLayout:
+		
+		orientation: 'vertical'
+		Label:
+			text: "Content of this App"
+			font_size: 30
+			size_hint: (1, 0.2)
+		
+		BoxLayout:
+			orientation: 'horizontal'
+			size_hint: 1,0.2
+			Button:
+				text: "Digit Demo"
+				on_release: app.root.current = "other"
+				size_hint: 0.5, 1
+				font_size: 20
+			Button:
+				on_release: app.root.current = "digit_gen"
+				text: "Digit Generation & Manipulation"
+				font_size: 20
+				size_hint: 0.5,1
+			Button:
+				on_release: app.root.current = "pm"
+				text: "Predictive Maintenance"
+				font_size: 20
+				size_hint: 0.5,1
+		Label:
+			text: ""
+			size_hint: 1,0.1
+			
+<PMScreen>:
+	name: "pm"
+	BoxLayout:
+		orientation: 'vertical'
+		BoxLayout:
+			orientation: 'vertical'
+			BoxLayout:
+				orientation: 'horizontal'
+				size_hint: 1,0.1
+				Label:
+					text: ""
+					font_size: 30
+					size_hint: 0.2,1
+				Label:
+					text: "21 Dimensions"
+					font_size: 30
+					size_hint: 0.3,1
+				
+				Label:
+					text: "vs"
+					font_size: 30
+					size_hint: 0.2,1
+				
+				Label:
+					text: "2 Dimensions"
+					font_size: 30
+					size_hint: 0.3,1
+				Button:
+					text: "Back"
+					font_size: 20
+					size_hint: 0.2,1
+					on_release: app.root.current = "content"
+			
+			BoxLayout:
+				orientation: 'horizontal'
+				size_hint: 1, 0.9
+				BoxLayout:
+					orientation: 'vertical'
+					size_hint: 0.01,1
+				BoxLayout:
+					orientation: 'vertical'
+					size_hint: 0.485,1
+					
+					Image:
+						source: "C:/Users/dominik.urbaniak/Documents/digit-demo-anaconda/im/"+str(root.sli+5)+".png"
+						size_hint: 1, 0.95
+						padding: 10
+					Slider:
+						value: root.sli
+						on_value: root.sli = int(args[1])
+						min: 3
+						max: 368
+						size_hint: 1,0.05
+						
+				BoxLayout:
+					orientation: 'vertical'
+					size_hint: 0.01,1
+				BoxLayout:
+					orientation: 'vertical'
+					size_hint: 0.485,1		
+					Image:
+						source: "C:/Users/dominik.urbaniak/Documents/digit-demo-anaconda/vid6_new/plot_cy2_"+str(int(root.sli/3))+"_hours.png"
+						size_hint: 1, 0.95
+					Button:
+						text: 'Anomaly'
+						on_press: app.root.current = "anomaly"
+						size_hint: 1,0.05
+					
+				BoxLayout:
+					orientation: 'vertical'
+					size_hint: 0.01,1
+				
+<AnomalyScreen>:
+	name: "anomaly"
+	BoxLayout:
+		orientation: 'vertical'
+		
+		BoxLayout:
+			orientation: 'horizontal'
+			size_hint: 1,0.1
+			Label:
+				text: "Density of the data distribution"
+				font_size: 30
+				size_hint: 0.8,1
+				
+			Button:
+				text: "Back"
+				font_size: 20
+				size_hint: 0.2,1
+				on_release: app.root.current = "pm"	
+				
+		Image:
+			source: "C:/Users/dominik.urbaniak/Documents/digit-demo-anaconda/vid3/cy2_alpha_"+str(root.an)+"_hours.png"
+			size_hint: 1, 0.95
+			padding: 10
+		Slider:
+			value: root.an
+			on_value: root.an = int(args[1])
+			min: 1
+			max: 50
+			size_hint: 1,0.05
+				
+			
+			
+<DigitGenScreen>:
+	name: "digit_gen"
+	BoxLayout:
+		orientation: 'vertical'
+		BoxLayout:
+			orientation: 'horizontal'
+			size_hint: 1,0.1
+			Label:
+				text: "Digit Generation & Manipulation"
+				font_size: 30
+				size_hint: 0.8,1
+			Button:
+				text: "Back"
+				font_size: 20
+				size_hint: 0.2,1
+				on_release: app.root.current = "content"
+		
+		BoxLayout:
+			orientation: 'vertical'
+			size_hint: 1,0.2
+		
+			Label:
+				text: "Choosing noise vector for generation"
+				halign: 'left'
+				font_size: 20
+				size_hint: (1, 0.1)
+				text_size: self.size
+			Slider:
+				value: root.gen_im
+				on_value: root.gen_im = int(args[1])
+				min: 0
+				max: 99
+				size_hint: 1,0.1
+		
+		BoxLayout:
+			orientation: 'vertical'
+			size_hint: 1,0.4		
+			Label:
+				text: "Manipulating the line thickness"
+				halign: 'left'
+				font_size: 20
+				size_hint: (1, 0.1)
+				text_size: self.size
+			Image:
+				source: "C:/Users/dominik.urbaniak/Documents/digit-demo-anaconda/thi/thi_"+str(root.gen_im)+"_"+str(root.thi)+".png"
+				size_hint: 1, 0.2
+			Slider:
+				value: root.thi
+				on_value: root.thi = int(args[1])
+				min: 0
+				max: 9
+				size_hint: 1,0.1
+				
+		BoxLayout:
+			orientation: 'vertical'
+			size_hint: 1,0.4
+			Label:
+				text: "Manipulating the digit tilt"
+				halign: 'left'
+				font_size: 20
+				size_hint: (1, 0.1)
+				text_size: self.size
+			Image:
+				source: "C:/Users/dominik.urbaniak/Documents/digit-demo-anaconda/til/til_"+str(root.gen_im)+"_"+str(root.til)+".png"
+				size_hint: 1, 0.2
+			Slider:
+				value: root.til
+				on_value: root.til = int(args[1])
+				min: 0
+				max: 9
+				size_hint: 1,0.1	
+		
+	
+			
+<MainScreen>:
+	name: "main"
+	BoxLayout:
+		
+		orientation: 'vertical'
+		Label:
+			text: "Review Your Input"
+			font_size: 30
+			size_hint: (1, 0.2)
+		Image:
+			source: 'C:/Users/dominik.urbaniak/Documents/digit-demo-anaconda/digit1.png'
+			size_hint: 1,0.6
+		BoxLayout:
+			orientation: 'horizontal'
+			size_hint: 1,0.1
+			Button:
+				text: "Back"
+				on_release: app.root.current = "other"
+				size_hint: 0.3, 1
+				font_size: 20
+			Button:
+				on_release: app.root.new_result_screen()
+				text: "Let the NN guess your digit"
+				font_size: 20
+				size_hint: 0.7,1
+		Label:
+			text: ""
+			size_hint: 1,0.1
+		
+<AnotherScreen>:
+	name: "other"
+	
+	BoxLayout:
+		
+		orientation: 'vertical'
+		BoxLayout:
+			orientation: 'horizontal'
+			size_hint: 1, 0.2
+			Label:
+				text: "Write a Single Digit"
+				font_size: 30
+				size_hint: 0.8,1
+			Button:
+				text: "Back"
+				font_size: 20
+				size_hint: 0.2,1
+				on_release: app.root.current = "content"
+		DrawInput:
+			id: painter
+			size_hint: 1,0.9
+	
+			
+		BoxLayout:
+			orientation: 'horizontal'
+			size_hint: 1,0.1
+			
+			Button:
+				font_size: 20
+				size_hint: 0.4,1
+				text: "Clear Screen"
+				on_release: painter.canvas.clear()
+			Button:			
+				font_size: 20
+				size_hint: 0.6,1
+				text: "Save Image"
+				on_press: painter.save()
+				on_release: painter.canvas.clear()
+				on_release: app.root.new_screen()
+		 
+		Label:
+			text: ""
+			size_hint: 1,0.1
+
+<ResultScreen>:
+	name: "Result"
+	BoxLayout:
+		
+		orientation: "vertical"
+		Label:
+			text: "Result"
+			size_hint: 1,0.2
+			font_size: 30
+		BoxLayout:
+			orientation: 'horizontal'
+			size_hint: 1,0.6
+			BoxLayout:
+				orientation: 'vertical'
+				Label:
+					text: "Reconstruction"
+					font_size: 30
+					size_hint: 1,0.2
+				Image:
+					source: "C:/Users/dominik.urbaniak/Documents/digit-demo-anaconda/"+root.im_s
+					size_hint: 1,0.6
+				Label:
+					text: "Error: {:.5}".format(root.pred1)
+					font_size: 20
+					size_hint: 1,0.2
+			BoxLayout:
+				orientation: 'vertical'
+				Label:
+					text: "Prediction CNN"
+					font_size: 30
+					size_hint: 1,0.2
+				Label:
+					text: root.pred2
+					font_size: 200
+					size_hint: 1, 0.6
+				Label:
+					text: "Confidence: {:.4}%".format(root.conf2)
+					font_size: 20
+					size_hint: 1, 0.2
+			BoxLayout:
+				orientation: 'vertical'
+				Label:
+					text: "Original Input"
+					font_size: 30
+					size_hint: 1,0.2
+				Image:
+					source: "C:/Users/dominik.urbaniak/Documents/digit-demo-anaconda/digit_show.png"
+					size_hint: 1,0.6
+				Label:
+					text: ""
+					font_size:20
+					size_hint: 1,0.2
+				
+		Button:
+			text:"Write Another Digit"
+			on_release: app.root.current = "other"
+			size_hint: 1,0.1
+			font_size: 20
+		Label:
+			text: ""
+			size_hint: 1,0.1
