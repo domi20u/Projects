@@ -5,8 +5,8 @@ classdef dmp3D
     %step
     
     %Methods to call 
-    %train: learn mean_x and mean_y for the given trajectory
-    %optimize: learn desired trajectory with learned initial mean_x and mean_y 
+    %train: learn mean_x, mean_y and mean_z for the given trajectory
+    %optimize: learn desired trajectory with learned initial mean_x, mean_y and mean_z 
     
     %Necessary function files:
     %rbfn_fit.m
@@ -15,9 +15,7 @@ classdef dmp3D
     %dE_spring3D.m
     
     %Examples
-    %test.m: optimizing the throwing task
-    %dmp_pp_test.m: test the rotation and dilatation invariance according
-    %to the dmp++ paper
+    %test3D.m: optimizing the throwing task
     
     properties
         
@@ -42,8 +40,8 @@ classdef dmp3D
         n_time_steps            %Selectable number of time steps to execute the trajectory
         learned_position        %Constant value initialized from imitating the original trajectory: x_end-x_init
         rescale                 %Boolean, initialized to 1, keeps the trajectory invariant to dilatation and rotation when selecting different initial or goal positions
-        ball_init
-        ball_goal
+        ball_init               %landing site of the ball of demostrated trajectory
+        ball_goal               %desired landing site of the ball after optimization
         
     end
     
