@@ -1,5 +1,5 @@
 classdef dmp3D
-    %Train and optimize 2D-trajectories with dmps
+    %Train and optimize 3D-trajectories with dmps
     %Mandatory input: text-file with a trajectory to be imitated by dmp
     %with time and desired positions, velocities and acceleration per time
     %step
