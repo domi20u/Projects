@@ -9,7 +9,7 @@ rotY = pi/20;                       %default: pi/20
 rotZ = pi/10;                        %default: pi/10
 
 damping_coefficient = 20;           %default: 20
-n_rbf = 10;                         %default: 10
+n_rbf =20;                         %default: 10
 sigma = 1.5;                        %default: 3.5
 n_time_steps = 250;                 %default: 200
 max_opt_runs = 140;

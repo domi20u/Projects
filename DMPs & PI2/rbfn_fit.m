@@ -9,27 +9,32 @@ centers = linspace(0,1,n_basis_functions);
 widths = ones(n_basis_functions,1);
 c = zeros(1,n_basis_functions);
 for i =1:n_basis_functions
-    c(i) = exp(-tau*i*tau/n_basis_functions);
+    %c(i) = exp(-tau*i*tau/n_basis_functions);
+    c(i) = exp(-4*i*tau/n_basis_functions);
 end
 if bf_type == "mollifier"
     %for basis function calculation from dmp++
     for i=2:n_basis_functions
-        w = 1/(centers(i)-centers(i-1));
+        w = 1/(centers(i)-centers(i-1))*intersection_height
         widths(i) = w;
     end
     widths(1) = widths(2);
 else
     for i=1:n_basis_functions-1
-        w = sqrt((centers(i+1)-centers(i))^2/(-8*log(intersection_height)));
+        w = sqrt((centers(i+1)-centers(i))^2/(-8*log(intersection_height)))
         widths(i) = w;
     end
     widths(n_basis_functions) = widths(n_basis_functions-1);
 end
 
 ac = zeros(n_time_steps,n_basis_functions);
+%figure(5)
+%hold on
 for i=1:n_basis_functions 
+    
     if bf_type == "mollifier"
         ac(:,i) = mollifier(xt,centers(i),widths(i));
+        %plot(ac(:,i))
     else
         ac(:,i) = rbf(xt,centers(i),widths(i));
     end
