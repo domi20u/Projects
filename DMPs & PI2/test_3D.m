@@ -16,9 +16,9 @@ rbf_dmp.bf_type = "rbf";
 %rbf_dmp.no_exp = 1;
 mullifier_dmp = dmp3D(alpha,damping_coefficient,mass,n_rbf,sigma,n_time_steps);
 %mullifier_dmp.no_exp = 1;
-rbf_dmp = rbf_dmp.train("trajectory_3D.txt");
+rbf_dmp = rbf_dmp.train("traj3D.txt");
 
-mullifier_dmp = mullifier_dmp.train("trajectory_3D.txt");
+mullifier_dmp = mullifier_dmp.train("traj3D.txt");
 mullifier_dmp.plot_rollout(0)
 
 writematrix([rbf_dmp.mean_x,rbf_dmp.mean_y,rbf_dmp.mean_z],"results_3D/orig_rbf_means.txt")
