@@ -10,6 +10,6 @@ Running [*test3Dnew.m*](https://github.com/domi20u/Projects/blob/master/DMPs%20%
 DMP with selectable basis functions in 3D and additional rotation parameters to transform the demonstrated 2D trajectory into 3D.
 ![3D_dmps](https://github.com/domi20u/Projects/blob/master/DMPs%20%26%20PI2/images/dmp3D_bad_better.png)
 
-When tuning the parameters, check whether the reproduction of the demonstrated trajectory succeeds.
+When tuning the parameters, first check whether the reproduction of the demonstrated trajectory succeeds.
 ![forcing_terms](https://github.com/domi20u/Projects/blob/master/DMPs%20%26%20PI2/images/forcing_terms_mollifier_2D.png)
 ![dynamics](https://github.com/domi20u/Projects/blob/master/DMPs%20%26%20PI2/images/demo_repro_dynamics_3D.png)
