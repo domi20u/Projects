@@ -1,4 +1,4 @@
-# Projects during the M.Sc. Robotics, Cognition, Intelligence at TUM
+# Projects during the M.Sc. Robotics, Cognition, Intelligence
 
 
 [DMPs & PI2](https://github.com/domi20u/Projects/tree/master/DMPs%20%26%20PI2)          |  [DQN](https://github.com/domi20u/Projects/tree/master/Interactive%20ML)      |   [Robot Control](https://github.com/domi20u/Projects/tree/master/StrawAlert)
@@ -7,7 +7,7 @@
 |    Imitating a given 2D-trajectory for a throwing task with DMPs and optimizing wrt the landing site of the ball with PI2 (reproduced from [dmpbbo](https://github.com/roothyb/dmpbbo/tree/master/demo_robot))     | Solving the cartpole task with a DQN-agent (GPU accelerated) | Controlling a UR-10 robot arm in simulation (R-Viz) with PD-, PID- and adaptive controllers   |
 | MATLAB | MATLAB | MATLAB, C++, ROS|
 
-# Projects during the B.Sc. Engineering Science (MSE) at TUM
+# Projects during the B.Sc. Engineering Science (MSE)
 
 [HDR-Depth-Imaging](https://github.com/domi20u/Projects/tree/master/HDR-Depth-Imaging)          |  [Interactive ML](https://github.com/domi20u/Projects/tree/master/Interactive%20ML)      |   [StrawAlert](https://github.com/domi20u/Projects/tree/master/StrawAlert)
 :-------------------------:|:-------------------------:|:-------------------------:
