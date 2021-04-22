@@ -5,7 +5,7 @@ Even though the cartpole environment has a continuous action space a DQN-agent s
 [*test.m*](https://github.com/domi20u/Projects/blob/master/DQN/test.m) trains a DQN agent from scratch.
 [*test_sim.m*](https://github.com/domi20u/Projects/blob/master/DQN/test_sim.m) loads the 10 pretrained models and simulates the solved cartpole environment.
 
-The rewards from the 10 models reached the trigger condition (ten consecutive runs with a reward lower than -20) before 350 episodes total. An episode is terminated early when the cart exceeds its operational space.
+The rewards from the 10 models reached the trigger condition (ten consecutive runs with a reward lower than -20) before 350 episodes total. An episode is terminated early when the cart exceeds its operational space (|x|>6).
 
 ![reward_full_episodes](https://github.com/domi20u/Projects/blob/master/DQN/images/cumulative_reward.png)
 
