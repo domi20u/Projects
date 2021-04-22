@@ -1,4 +1,4 @@
-# HDR imaging for improving disparity maps
+# HDR imaging for improving disparity maps in difficult light situations
 
 In situations with strong light intensity gradients, conventional cameras fail to display most of the image content. In autonomous driving these situations occur when the pavement reflects the sun rays or when entering/exiting a tunnel.
 
