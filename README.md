@@ -1,9 +1,9 @@
 # Projects during the M.Sc. Robotics, Cognition, Intelligence
 
 
-[DMPs & PI2](https://github.com/domi20u/Projects/tree/master/DMPs%20%26%20PI2)          |  [DQN](https://github.com/domi20u/Projects/tree/master/DQN)      |   [Robot Control](https://github.com/domi20u/Projects/tree/master/Robot%20Control)
+[TAMP using LfD & RL](https://github.com/domi20u/Projects/tree/master/DMPs%20%26%20PI2)          |  [DQN](https://github.com/domi20u/Projects/tree/master/DQN)      |   [Robot Control](https://github.com/domi20u/Projects/tree/master/Robot%20Control)
 :-------------------------:|:-------------------------:|:-------------------------:
-|  Project for the practical course |  Project from a RL-class   |  Practical Exercise from a robotics class|
+|  Master's Thesis |  Project from a RL-class   |  Practical Exercise from a robotics class|
 |    Imitating a given 2D-trajectory for a throwing task with DMPs and optimizing wrt the landing site of the ball with PI2 (reproduced from [dmpbbo](https://github.com/roothyb/dmpbbo/tree/master/demo_robot))     | Solving the cartpole task with a DQN-agent (GPU accelerated) | Controlling a UR-10 robot arm in simulation (R-Viz) with PD-, PID- and adaptive controllers   |
 | MATLAB | MATLAB | MATLAB, C++, ROS|
 
