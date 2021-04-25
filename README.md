@@ -1,11 +1,11 @@
 # Projects during the M.Sc. Robotics, Cognition, Intelligence
 
 
-[TAMP using LfD & RL](https://github.com/domi20u/Projects/tree/master/DMPs%20%26%20PI2)          |  [DQN](https://github.com/domi20u/Projects/tree/master/DQN)      |   [Robot Control](https://github.com/domi20u/Projects/tree/master/Robot%20Control)
-:-------------------------:|:-------------------------:|:-------------------------:
-|  Master's Thesis |  Project from a RL-class   |  Practical Exercise from a robotics class|
-|    Imitating a given 2D-trajectory for a throwing task with DMPs and optimizing wrt the landing site of the ball with PI2 (reproduced from [dmpbbo](https://github.com/roothyb/dmpbbo/tree/master/demo_robot))     | Solving the cartpole task with a DQN-agent (GPU accelerated) | Controlling a UR-10 robot arm in simulation (R-Viz) with PD-, PID- and adaptive controllers   |
-| MATLAB, Lua | MATLAB | MATLAB, C++, ROS|
+[TAMP using LfD & RL](https://github.com/domi20u/Projects/tree/master/DMPs%20%26%20PI2)          |  [DQN](https://github.com/domi20u/Projects/tree/master/DQN)      |   [Robot Control](https://github.com/domi20u/Projects/tree/master/Robot%20Control) | Interactive ML
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+|  Master's Thesis |  Project from a RL-class   |  Practical exercise from a robotics class | Project from working student position
+|    Imitating a given 2D-trajectory for a throwing task with DMPs and optimizing wrt the landing site of the ball with PI2 (reproduced from [dmpbbo](https://github.com/roothyb/dmpbbo/tree/master/demo_robot))     | Solving the cartpole task with a DQN-agent (GPU accelerated) | Controlling a UR-10 robot arm in simulation (R-Viz) with PD-, PID- and adaptive controllers   | Digit recognition, trained with 11th class "no digit" & anomaly detection with autoencoder  / generated images with infoGAN / predictive maintenance example using PCA|
+| MATLAB, Lua | MATLAB | MATLAB, C++, ROS| Python 
 
 # Projects during the B.Sc. Engineering Science (MSE)
 
