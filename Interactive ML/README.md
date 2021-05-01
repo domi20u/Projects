@@ -1,5 +1,4 @@
-# Interactive ML
-
+** Interactive ML: Supervised Learning, Generative Model, Clustering
 
 Digit recognition CNN with 11th class "no digit" compared to Autoencoder anomaly detection.
 ![digit-rec](https://github.com/domi20u/Projects/blob/master/Interactive%20ML/digit-rec.PNG)
