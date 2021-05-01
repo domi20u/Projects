@@ -1,4 +1,4 @@
-# StrawAlert: Fighting Dehydration
+**StrawAlert: Fighting Dehydration**
 In 2013, there were more than 100,000 stationary treatments in Germany resulting in costs of several hundred million euro.
 
 This Android app suggests a method to mitigate this avoidable issue of dehydration in a supervised environment (like hospitals or retirement homes).
