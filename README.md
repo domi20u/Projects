@@ -4,7 +4,7 @@
 [TAMP using LfD & RL](https://github.com/domi20u/Projects/tree/master/TAMP%20using%20LfD%20%26%20RL)          |  [DQN](https://github.com/domi20u/Projects/tree/master/DQN)       | [Interactive ML](https://github.com/domi20u/Projects/tree/master/Interactive%20ML)  |   [Robot Control](https://github.com/domi20u/Projects/tree/master/Robot%20Control)
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 |  Master's Thesis |  Project from a RL-class    | Project from working student position  |  Practical exercise from a robotics class
-|   Developing a Task and Motion Planning (TAMP) framework that grounds symbolic actions with efficient and divers motion generation using learning from demonstration and reinforcement learning   | Solving the cartpole task with a DQN-agent (GPU accelerated)    | Digit recognition, trained with 11th class "no digit" & anomaly detection with autoencoder  / generated images with infoGAN / predictive maintenance example using PCA|  | Controlling a UR-10 robot arm in simulation (R-Viz) with PD-, PID- and adaptive controllers
+|   Developing a Task and Motion Planning (TAMP) framework that grounds symbolic actions with efficient and divers motion generation using learning from demonstration and reinforcement learning   | Solving the cartpole task with a DQN-agent (GPU accelerated)    | Digit recognition, trained with 11th class "no digit" & anomaly detection with autoencoder  / generated images with infoGAN / predictive maintenance example using PCA  | Controlling a UR-10 robot arm in simulation (R-Viz) with PD-, PID- and adaptive controllers
 | MATLAB, Lua | MATLAB | Python | MATLAB, C++, ROS
 
 # Projects during the B.Sc. Engineering Science (MSE)
