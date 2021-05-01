@@ -13,7 +13,7 @@
 :-------------------------:|:-------------------------:
 |  Bachelor's Thesis |  Group project from MW practical course|
 |    High dynamic range imaging for stereo cameras in automous vehicles to improve depth information in difficult light situations  | Android App for nurses preventing the patient to dehydrate.  |
-| Python, C++ |  |
+| C++, Python |  |
 
 
 
