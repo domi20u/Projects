@@ -1,6 +1,6 @@
 **Solving the cartpole task with a DQN agent**
 
-![cartpole](https://github.com/domi20u/Projects/blob/master/DQN/images/cartpole_sim.PNG)
+![cartpole](https://github.com/domi20u/Projects/blob/master/DQN/images/cartpole_sim.gif)
 
 Even though the cartpole environment has a continuous action space a DQN-agent selects among a discrete set of actions. 
 [*test.m*](https://github.com/domi20u/Projects/blob/master/DQN/test.m) trains a DQN agent from scratch.
