@@ -14,4 +14,4 @@ The exploration strategy results in the following development, where the probabi
 
 ![exploration](https://github.com/domi20u/Projects/blob/master/DQN/images/epsilon_thresh.png)
 
-More information can be found in the [PDF](https://github.com/domi20u/Projects/blob/master/DQN/DQNvsDDPG.pdf) or [PowerPoint](https://github.com/domi20u/Projects/blob/master/DQN/DQNvsDDPG.pptx).
+More information can be found in the [report](https://github.com/domi20u/Projects/blob/master/DQN/DQNvsDDPG.pdf) or [presentation](https://github.com/domi20u/Projects/blob/master/DQN/DQNvsDDPG.pdf).
